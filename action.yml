@@ -5,26 +5,6 @@ branding:
   icon: 'award'  
   color: 'green'
 inputs:
-  configurationJson:
-    description: 'Defines the configuration json. If provided, will be prefered over `configuration`.'
-  configuration:
-    description: 'Defines the relative path to the configuration file.'
-  path:
-    description: 'Defines the directory the repo is located in (checkout directory)'
-  owner:
-    description: 'Defines the owner of the repository to create the changelog for'
-  repo:
-    description: 'Defines the repository to create the changelog for'
-  fromTag:
-    description: 'Defines the previous tag to compare against'
-  toTag:
-    description: 'Defines the newly tag created'
-  includeOpen:
-    description: 'Defines if the changelog should include open PRs'
-    default: "false"
-  ignorePreReleases:
-    description: 'Defines if the action will only use full releases to compare against (Only used if fromTag is not defined). E.g. for 1.0.1... 1.0.0-rc02 <- ignore, 1.0.0 <- pick'
-    default: "false"
   failOnError:
     description: 'Defines if the action should result in a build failure, if an error was discovered'
     default: "false"
